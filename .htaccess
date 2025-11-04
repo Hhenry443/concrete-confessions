@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /concrete-confessions/
+
+# If the request isn't an actual file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite to the 'public' folder
+RewriteRule ^(.+)$ public/$1.php [NC,L]
