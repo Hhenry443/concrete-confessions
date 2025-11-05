@@ -1,9 +1,9 @@
 <?php
 
 $servername = "db";
-$username = "test";
-$password = "test";
-$dbname = "concrete_confessions";
+$username = "concrete_admin";
+$password = "umeO&9Rk26qC0P;d.?[geYeI";
+$dbname = "concrete";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -12,7 +12,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM test_data";
+$sql = "SELECT * FROM users";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
