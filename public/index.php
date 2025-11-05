@@ -1,8 +1,8 @@
 <?php
 
 $servername = "db";
-$username = "concrete_admin";
-$password = "umeO&9Rk26qC0P;d.?[geYeI";
+$username = "root";
+$password = "root";
 $dbname = "concrete";
 
 // Create connection
